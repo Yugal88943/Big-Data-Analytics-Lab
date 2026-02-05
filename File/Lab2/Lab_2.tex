@@ -1,0 +1,153 @@
+
+% Assignment 2: Understand distributed data storage.
+%-----------------------------------------------
+\refstepcounter{section}
+\addlabcontentsline{Assignment \thesection: Load large datasets into HDFS and
+analyze block distribution.}
+{(03-02-2026)}
+{\thepage}
+\section*{\centering Assignment \thesection: Load large datasets into HDFS and
+analyze block distribution.}
+
+\noindent \textbf{Objective:} Understand how Apache Hadoop HDFS stores large files by splitting them into fixed-size blocks and placing them on DataNodes.
+%-----------------------------------------------
+% Task 1
+% -----------------------------------------------
+\subsection{Step 1: Collect large Dataset (CSV/TXT)}
+% \subsubsection*{}
+% \vspace{-1em}
+\begin{verbatim}
+su - hadoop 
+start-dfs.sh
+start-yarn.sh
+jps
+\end{verbatim}
+\begin{figure}[H]
+    \centering
+    \vspace{-1em}
+    \includegraphics[width=1.0\textwidth]{Lab2/Images/start_hadoop.png}
+    \includegraphics[width=1.0\textwidth]{Lab2/Images/jps.png}
+    \caption{Start Hadoop Services and Verify with jps}
+    \label{fig:start_hadoop_services}
+\end{figure}
+%-----------------------------------------------
+% Task 2
+%-----------------------------------------------
+
+\subsection{Step 2: Create HDFS directory.}
+% \subsubsection*{Install SSH Server}
+\begin{verbatim}
+% Created 352 MB csv file using:excel and uploaded to hdfs:
+% Created exceldata directory in hdfs:
+hdfs dfs -mkdir /exceldata
+ls -lh mydataset.csv
+hdfs dfs -put mydataset.csv /exceldata
+hdfs dfs -ls /exceldata
+\end{verbatim}
+\begin{figure}[H]
+    \centering
+    \vspace{-1em}
+     \includegraphics[width=1.0\textwidth]{Lab2/Images/copy.png}
+    \caption{Created exceldata directory in hdfs and copied dataset}
+    \label{fig:hdfs_directory_creation}
+\end{figure}
+%-----------------------------------------------
+% Task 3
+%-----------------------------------------------
+
+\subsection{Step 3: Upload large dataset into HDFS}
+% \vspace{-0.1em}
+% \subsubsection*{Create Hadoop User}
+\begin{verbatim}
+hdfs dfs -put mydataset.csv /exceldata
+\end{verbatim}
+\begin{figure}[H]
+    \centering
+    \vspace{-1em}
+     \includegraphics[width=1.0\textwidth]{Lab2/Images/load.png}
+    \caption{Upload large dataset into HDFS}
+    \label{fig:hadoop_upload_dataset}
+\end{figure}
+
+
+\subsection{Step 4: Verify data storage}
+% \subsubsection*{.bashrc Modification}
+\begin{verbatim}
+hdfs dfs -ls /exceldata
+\end{verbatim}
+\begin{figure}[H]
+    \centering
+    \vspace{-1em}
+    \includegraphics[width=1.0\textwidth]{Lab2/Images/verify.png}
+    \caption{Verify data storage in HDFS}
+    \label{fig:hdfs_verify_storage}
+\end{figure}
+
+%-----------------------------------------------
+% Result
+%-----------------------------------------------
+
+\subsection{Step 5: Analyze block distribution}
+% \subsubsection*{hadoop-env.sh Modification}
+\begin{verbatim}
+hdfs fsck /exceldata/mydataset.csv -files -blocks -locations
+\end{verbatim}
+\begin{figure}[H]
+    \centering
+    \vspace{-1em}
+    \includegraphics[width=1.0\textwidth]{Lab2/Images/block.png}
+    \caption{Analyze block distribution in HDFS}
+    \label{fig:hdfs_block_distribution}
+\end{figure}
+
+
+\subsection{Step 6: Download processed dataset from HDFS to local system}
+% \subsubsection*{Format NameNode}
+\begin{verbatim}
+hdfs dfs -get /exceldata/mydataset.csv mydataset_from_hdfs.csv
+\end{verbatim}
+\begin{figure}[H]
+    \centering
+    \vspace{-1em}
+    \includegraphics[width=1.0\textwidth]{Lab2/Images/down.png}
+    \caption{Download processed dataset from HDFS to local system}
+    \label{fig:hdfs_download_dataset}
+\end{figure}
+
+
+\subsection{Step 7: Delete data from HDFS}
+% \subsubsection*{Operations}
+\begin{verbatim}
+hdfs dfs -rm -r /exceldata
+\end{verbatim}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{Lab2/Images/delete.png}
+    \caption{Delete data from HDFS}
+    \label{fig:hdfs_delete_data}
+\end{figure}
+
+% Check file block information.
+\subsection{Step 8: Check file block information}
+\begin{figure}[H]   
+    \centering
+    \includegraphics[width=\textwidth]{Lab2/Images/final.png}
+    \caption{Check file block information in HDFS}
+    \label{fig:hdfs_file_block_info}
+\end{figure}
+
+
+\subsection{Result}
+
+The large dataset (mydataset.csv) was successfully uploaded to HDFS under the /exceldata directory. The file was split into blocks and distributed across DataNodes, as verified by the block distribution analysis. The dataset was also downloaded back to the local system, confirming that data retrieval from HDFS works correctly. Finally, the dataset was deleted from HDFS, demonstrating proper data management and cleanup.
+
+%-----------------------------------------------
+% Conclusion
+%-----------------------------------------------
+
+\subsection{Conclusion}
+
+This assignment provided hands-on experience with Apache Hadoop HDFS, demonstrating how to upload large datasets, analyze block distribution, and manage data within the HDFS environment. 
+%-----------------------------------------------
+% End of Assignment 1
+%-----------------------------------------------

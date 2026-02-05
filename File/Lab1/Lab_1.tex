@@ -1,0 +1,364 @@
+
+% Assignment 1: Install Apache Hadoop and Setup Single Node Cluster
+%-----------------------------------------------
+\refstepcounter{section}
+\addlabcontentsline{Assignment \thesection: Install Apache Hadoop and Setup Single Node Cluster}
+{(27-01-2026)}
+{\thepage}
+\section*{\centering Assignment \thesection: Install Apache Hadoop and Setup Single Node Cluster}
+
+\noindent \textbf{Objective:} To install and configure Apache Hadoop in pseudo-distributed mode and perform basic HDFS operations such as upload, delete, replication check, and permission handling.
+%-----------------------------------------------
+% Task 1
+% -----------------------------------------------
+\subsection{Step 1: Installing Java}
+\subsubsection*{Updating System}
+% \vspace{-1em}
+\begin{verbatim}
+sudo apt update
+\end{verbatim}
+\begin{figure}[H]
+    \centering
+    \vspace{-1em}
+    \includegraphics[width=1.0\textwidth]{Lab1/Images/apt_update.png}
+    \caption{System Update Command}
+    \label{fig:system_update}
+\end{figure}
+\subsubsection*{Installing Java}
+\begin{verbatim}
+sudo apt install openjdk-11-jdk -y
+\end{verbatim}
+\begin{figure}[H]
+    \centering
+    \vspace{-1em}
+    \includegraphics[width=1.0\textwidth]{Lab1/Images/jdk_install.png}
+    \caption{Java Installation}
+    \label{fig:java_installation}
+\end{figure} 
+\subsubsection*{Java Version and Path Verification}
+\begin{verbatim}
+java -version
+readlink -f $(which java)
+\end{verbatim}
+\begin{figure}[H]
+    \centering
+    \vspace{-1em}
+    \includegraphics[width=1.0\textwidth]{Lab1/Images/jdk_version.png}
+    \caption{Java Version and Path Verification}
+    \label{fig:java_version_verification}
+\end{figure}
+%-----------------------------------------------
+% Task 2
+%-----------------------------------------------
+
+\subsection{Step 2: Setup SSH}
+\subsubsection*{Install SSH Server}
+\begin{verbatim}
+sudo apt install openssh-server -y
+ssh localhost
+\end{verbatim}
+\begin{figure}[H]
+    \centering
+    \vspace{-1em}
+    \includegraphics[width=1.0\textwidth]{Lab1/Images/install_openssh.png}
+    \caption{Install SSH Server}
+    \label{fig:install_ssh_server}
+\end{figure}
+
+\subsubsection*{Generate SSH Key Pair}
+\begin{verbatim}
+ssh-keygen -t rsa -P ""
+cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+ssh localhost
+exit
+\end{verbatim}
+\begin{figure}[H]
+    \centering
+    \vspace{-1em}
+    \includegraphics[width=1.0\textwidth]{Lab1/Images/ssh_key_authorized.png}
+    \caption{Generate SSH Key Pair}
+    \label{fig:generate_ssh_key_pair}
+\end{figure}
+%-----------------------------------------------
+% Task 3
+%-----------------------------------------------
+
+\subsection{Step 3: Download and Configure Hadoop}
+% \vspace{-0.1em}
+\subsubsection*{Create Hadoop User}
+\begin{verbatim}
+sudo addgroup hadoop
+sudo adduser --ingroup hadoop hadoop
+sudo adduser hadoop sudo 
+su - hadoop
+\end{verbatim}
+\begin{figure}[H]
+    \centering
+    \vspace{-1em}
+    \includegraphics[width=1.0\textwidth]{Lab1/Images/hadoop_adduser.png}
+    \caption{Create Hadoop User}
+    \label{fig:hadoop_adduser}
+\end{figure}
+\subsubsection*{Download and Extract Hadoop}
+\begin{verbatim}
+exit
+sudo cp /home/yugal/Downloads/hadoop-3.3.0.tar.gz /home/hadoop/
+sudo chown hadoop:hadoop /home/hadoop/hadoop-3.3.0.tar.gz
+su - hadoop
+ls
+tar -xvzf hadoop-3.3.0.tar.gz
+\end{verbatim}
+\begin{figure}[H]
+    \centering
+    \vspace{-1em}
+    \includegraphics[width=1.0\textwidth]{Lab1/Images/hadoop_adduser.png}
+    \caption{Download and Extract Hadoop}
+    \label{fig:download_extract_hadoop}
+\end{figure}
+\subsubsection*{Moving Hadoop}
+\begin{verbatim}
+mv hadoop-3.3.0 hadoop
+ls
+\end{verbatim}
+\begin{figure}[H]
+    \centering
+    \vspace{-1em}
+    \includegraphics[width=1.0\textwidth]{Lab1/Images/move_hadoop.png}
+    \caption{Moving Hadoop}
+    \label{fig:move_hadoop}
+\end{figure}
+
+\subsection{Step 4: Environment Variable Configuration}
+\subsubsection*{.bashrc Modification}
+\begin{verbatim}
+nano ~/.bashrc
+% Add the following lines at the end of the file
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+export HADOOP_HOME=/home/hadoop/hadoop
+export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
+\end{verbatim}
+\begin{figure}[H]
+    \centering
+    \vspace{-1em}
+    \includegraphics[width=1.0\textwidth]{Lab1/Images/env1.png}
+    \includegraphics[width=1.0\textwidth]{Lab1/Images/bashrc.png}
+    \caption{.bashrc Modification}
+    \label{fig:bashrc_modification}
+\end{figure}
+
+%-----------------------------------------------
+% Result
+%-----------------------------------------------
+
+\subsection{Step 5: Hadoop XML Configuration Files}
+\subsubsection*{hadoop-env.sh Modification}
+\begin{verbatim}
+source ~/.bashrc
+echo $HADOOP_HOME
+/home/hadoop/hadoop
+cd $HADOOP_HOME/etc/hadoop
+ls
+nano hadoop-env.sh
+% Add the following lines at the path 
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+\end{verbatim}
+\begin{figure}[H]
+    \centering
+    \vspace{-1em}
+    \includegraphics[width=1.0\textwidth]{Lab1/Images/hadoop-env1.png}
+    \includegraphics[width=1.0\textwidth]{Lab1/Images/hadoop-env2.png}
+    \caption{hadoop-env.sh Modification}
+    \label{fig:hadoop-env_modification}
+\end{figure}
+
+\subsubsection*{core-site.xml Modification}
+\begin{verbatim}
+nano core-site.xml
+% Add the following property inside <configuration> tag
+<property>
+  <name>fs.defaultFS</name>
+  <value>hdfs://localhost:9000</value>
+</property>
+
+\end{verbatim}
+\begin{figure}[H]
+    \centering
+    \vspace{-1em}
+    \includegraphics[width=1.0\textwidth]{Lab1/Images/nano core-site1.png}
+    \includegraphics[width=1.0\textwidth]{Lab1/Images/nano core-site2.png}
+    \caption{core-site.xml Modification}
+    \label{fig:core-site_modification}
+\end{figure}
+
+\subsubsection*{hdfs-site.xml Modification}
+\begin{verbatim}
+nano hdfs-site.xml
+% Add the following property inside <configuration> tag
+<property>
+  <name>dfs.replication</name>
+  <value>1</value>
+</property>
+
+<property>
+  <name>dfs.namenode.name.dir</name>
+  <value>file:///home/hadoop/hdfs/namenode</value>
+</property>
+
+<property>
+  <name>dfs.datanode.data.dir</name>
+  <value>file:///home/hadoop/hdfs/datanode</value>
+</property>
+\end{verbatim}
+\begin{figure}[H]
+    \centering
+    \vspace{-1em}
+    \includegraphics[width=1.0\textwidth]{Lab1/Images/nano hdfs-site1.png}
+    \includegraphics[width=1.0\textwidth]{Lab1/Images/nano hdfs-site2.png}
+    \caption{hdfs-site.xml Modification}
+    \label{fig:hdfs-site_modification}
+\end{figure}
+
+\subsubsection*{Creating Folder for NameNode and DataNode}
+\begin{verbatim}
+mkdir -p ~/hdfs/namenode
+mkdir -p ~/hdfs/datanode
+\end{verbatim}
+\begin{figure}[H]
+    \centering
+    \vspace{-1em}
+    \includegraphics[width=1.0\textwidth]{Lab1/Images/data_name_folder.png}
+    \caption{Creating Folder for NameNode and DataNode}
+    \label{fig:creating_folder_namenode_datanode}
+\end{figure}
+
+\subsubsection*{mapred-site.xml Modification}
+\begin{verbatim}
+nano mapred-site.xml
+% Add the following property inside <configuration> tag
+<property>
+    <name>mapreduce.framework.name</name>
+    <value>yarn</value>
+</property>
+\end{verbatim}
+\begin{figure}[H]
+    \centering
+    \vspace{-1em}
+    \includegraphics[width=1.0\textwidth]{Lab1/Images/mapred-site1.png}
+    \includegraphics[width=1.0\textwidth]{Lab1/Images/mapred-site2.png}
+    \caption{mapred-site.xml Modification}
+    \label{fig:mapred-site_modification}
+\end{figure}
+
+\subsubsection*{yarn-site.xml Modification}
+\begin{verbatim}
+nano yarn-site.xml
+% Add the following property inside <configuration> tag
+<property>
+  <name>yarn.nodemanager.aux-services</name>
+  <value>mapreduce_shuffle</value>
+</property>
+\end{verbatim}
+\begin{figure}[H]
+    \centering
+    \vspace{-1em}
+    \includegraphics[width=1.0\textwidth]{Lab1/Images/yarn-site1.png}
+    \includegraphics[width=1.0\textwidth]{Lab1/Images/yarn-site2.png}
+    \caption{yarn-site.xml Modification}
+    \label{fig:yarn-site_modification}
+\end{figure}
+
+\subsection{Step 6: Format NameNode \& Start Hadoop Services}
+\subsubsection*{Format NameNode}
+\begin{verbatim}
+hdfs namenode -format
+\end{verbatim}
+\begin{figure}[H]
+    \centering
+    \vspace{-1em}
+    \includegraphics[width=1.0\textwidth]{Lab1/Images/hdfs_namenode_format.png}
+    \caption{Format NameNode}
+    \label{fig:hdfs_namenode_format}
+\end{figure}
+
+\subsubsection*{Start Hadoop Services}
+\begin{verbatim}
+start-dfs.sh
+jps
+\end{verbatim}
+\begin{figure}[H]
+    \centering
+    \vspace{-1em}
+    \includegraphics[width=1.0\textwidth]{Lab1/Images/start-dfs.png}
+    \includegraphics[width=1.0\textwidth]{Lab1/Images/jps.png}
+    \caption{Start Hadoop Services}
+    \label{fig:start-dfs}
+\end{figure}
+
+\subsubsection*{Start YARN Services}
+\begin{verbatim}
+start-yarn.sh
+jps
+\end{verbatim}
+\begin{figure}[H]
+    \centering
+    % \vspace{-1em}
+    \includegraphics[width=1.0\textwidth]{Lab1/Images/yarn.png}
+    \includegraphics[width=1.0\textwidth]{Lab1/Images/YARN.png}
+    \includegraphics[width=1.0\textwidth]{Lab1/Images/HDFS_UI.png}
+    \caption{Start YARN Services}
+    \label{fig:start-yarn}
+\end{figure}
+
+\subsection{Step 7: HDFS Operations}
+% \subsubsection*{Operations}
+\begin{verbatim}
+% Create a test file
+echo "Hello Big Data" > file.txt
+% Make directory in HDFS
+hdfs dfs -mkdir /data
+% Upload file to HDFS
+hdfs dfs -put file.txt /data
+% List files
+hdfs dfs -ls /data
+% Check blocks & replication
+hdfs fsck /data/file.txt -files -blocks
+% Change permission
+hdfs dfs -chmod 777 /data/file.txt
+% Delete file
+hdfs dfs -rm /data/file.txt
+hdfs dfs -ls /data
+\end{verbatim}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{Lab1/Images/hdfs_ops1.png}
+    \caption{HDFS Operation 1}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{Lab1/Images/hdfs_ops2.png}
+    \caption{HDFS Operation 2}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{Lab1/Images/hdfs_res1.png}
+    \caption{HDFS Result 1}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{Lab1/Images/hdfs_res2.png}
+    \caption{HDFS Result 2}
+\end{figure}
+
+
+\subsection{Result}
+Hadoop was successfully installed and configured in pseudo-distributed mode, and various HDFS operations were performed successfully.
+
+%-----------------------------------------------
+% Conclusion
+%-----------------------------------------------
+
+\subsection{Conclusion}
+This experiment provided hands-on experience in setting up a Big Data environment using Hadoop and understanding the working of HDFS through practical command execution.
+%-----------------------------------------------
+% End of Assignment 1
+%-----------------------------------------------

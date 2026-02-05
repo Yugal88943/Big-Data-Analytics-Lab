@@ -1,0 +1,31 @@
+\babel@toc {english}{}\relax 
+\contentsline {figure}{\numberline {1}{\ignorespaces System Update Command}}{1}{figure.caption.4}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Java Installation}}{1}{figure.caption.6}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Java Version and Path Verification}}{2}{figure.caption.8}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Install SSH Server}}{2}{figure.caption.10}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Generate SSH Key Pair}}{3}{figure.caption.12}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Create Hadoop User}}{3}{figure.caption.14}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Download and Extract Hadoop}}{4}{figure.caption.16}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Moving Hadoop}}{4}{figure.caption.18}%
+\contentsline {figure}{\numberline {9}{\ignorespaces .bashrc Modification}}{5}{figure.caption.20}%
+\contentsline {figure}{\numberline {10}{\ignorespaces hadoop-env.sh Modification}}{6}{figure.caption.22}%
+\contentsline {figure}{\numberline {11}{\ignorespaces core-site.xml Modification}}{7}{figure.caption.24}%
+\contentsline {figure}{\numberline {12}{\ignorespaces hdfs-site.xml Modification}}{8}{figure.caption.26}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Creating Folder for NameNode and DataNode}}{8}{figure.caption.28}%
+\contentsline {figure}{\numberline {14}{\ignorespaces mapred-site.xml Modification}}{9}{figure.caption.30}%
+\contentsline {figure}{\numberline {15}{\ignorespaces yarn-site.xml Modification}}{9}{figure.caption.32}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Format NameNode}}{10}{figure.caption.34}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Start Hadoop Services}}{10}{figure.caption.36}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Start YARN Services}}{11}{figure.caption.38}%
+\contentsline {figure}{\numberline {19}{\ignorespaces HDFS Operation 1}}{12}{figure.caption.39}%
+\contentsline {figure}{\numberline {20}{\ignorespaces HDFS Operation 2}}{12}{figure.caption.40}%
+\contentsline {figure}{\numberline {21}{\ignorespaces HDFS Result 1}}{13}{figure.caption.41}%
+\contentsline {figure}{\numberline {22}{\ignorespaces HDFS Result 2}}{13}{figure.caption.42}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Start Hadoop Services and Verify with jps}}{15}{figure.caption.44}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Created exceldata directory in hdfs and copied dataset}}{15}{figure.caption.45}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Upload large dataset into HDFS}}{15}{figure.caption.46}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Verify data storage in HDFS}}{16}{figure.caption.47}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Analyze block distribution in HDFS}}{16}{figure.caption.48}%
+\contentsline {figure}{\numberline {28}{\ignorespaces Download processed dataset from HDFS to local system}}{16}{figure.caption.49}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Delete data from HDFS}}{16}{figure.caption.50}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Check file block information in HDFS}}{17}{figure.caption.51}%
