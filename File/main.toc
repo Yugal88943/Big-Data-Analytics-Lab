@@ -20,3 +20,14 @@
 \contentsline {subsection}{\numberline {2.8}Step 8: Check file block information}{17}{subsection.2.8}%
 \contentsline {subsection}{\numberline {2.9}Result}{17}{subsection.2.9}%
 \contentsline {subsection}{\numberline {2.10}Conclusion}{17}{subsection.2.10}%
+\noindent \textbf {Assignment 3: Implement MapReduce programs for Data Processing.}\hfill \textbf {(10-02-2026)}\hfill \textbf {18}\par 
+\contentsline {subsection}{\numberline {3.1}Step 1: Start Hadoop Services}{18}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Step 2: Create Input Directory in HDFS}{18}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Step 3: Write MapReduce Program}{19}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Step 4: Compile Program and Create JAR}{21}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Step 5: Execute MapReduce Job}{21}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Step 6: Check Output Directory in HDFS}{21}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}Step 7: Display Result File}{22}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.8}Step 8: Modify Input and Re-run Job}{22}{subsection.3.8}%
+\contentsline {subsection}{\numberline {3.9}Result}{23}{subsection.3.9}%
+\contentsline {subsection}{\numberline {3.10}Conclusion}{23}{subsection.3.10}%

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.11.9)  3 FEB 2026 20:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.11.9)  13 FEB 2026 18:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1011,7 +1011,7 @@ Package: makeidx 2021/10/04 v1.0m Standard LaTeX package
 
 
 Writing index file main.idx
-(./main.aux (./title_page.aux) (./Lab1/Lab_1.aux) (./Lab2/Lab_2.aux))
+(./main.aux (./title_page.aux) (./Lab1/Lab_1.aux) (./Lab2/Lab_2.aux) (./Lab3/Lab_3.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 113.
@@ -1121,7 +1121,7 @@ Package gensymb Info: Using \textmu for \micro on input line 113.
 \openout2 = `title_page.aux'.
 
  (./title_page.tex
-<logo_250_1 (1).png, id=83, 60.225pt x 60.225pt>
+<logo_250_1 (1).png, id=123, 60.225pt x 60.225pt>
 File: logo_250_1 (1).png Graphic file (type png)
 <use logo_250_1 (1).png>
 Package pdftex.def Info: logo_250_1 (1).png  used on input line 30.
@@ -1144,13 +1144,13 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  [2
 
 
-] (./main.lof)
+] (./main.lof [3
+
+])
 \tf@lof=\write8
 \openout8 = `main.lof'.
 
- [3
-
-]
+ [4]
 \openout2 = `Lab1/Lab_1.aux'.
 
  (./Lab1/Lab_1.tex
@@ -1158,12 +1158,12 @@ LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 17
  (/usr/share/texlive/texmf-dist/tex/latex/vntex/t5cmtt.fd
 File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-<Lab1/Images/apt_update.png, id=184, 1371.1225pt x 613.29124pt>
+<Lab1/Images/apt_update.png, id=263, 1371.1225pt x 613.29124pt>
 File: Lab1/Images/apt_update.png Graphic file (type png)
 <use Lab1/Images/apt_update.png>
 Package pdftex.def Info: Lab1/Images/apt_update.png  used on input line 23.
 (pdftex.def)             Requested size: 455.24411pt x 203.622pt.
-<Lab1/Images/jdk_install.png, id=185, 1371.1225pt x 325.215pt>
+<Lab1/Images/jdk_install.png, id=264, 1371.1225pt x 325.215pt>
 File: Lab1/Images/jdk_install.png Graphic file (type png)
 <use Lab1/Images/jdk_install.png>
 Package pdftex.def Info: Lab1/Images/jdk_install.png  used on input line 34.
@@ -1173,23 +1173,23 @@ Package pdftex.def Info: Lab1/Images/jdk_install.png  used on input line 34.
 
 
  <./Lab1/Images/apt_update.png> <./Lab1/Images/jdk_install.png>]
-<Lab1/Images/jdk_version.png, id=196, 1371.1225pt x 259.97125pt>
+<Lab1/Images/jdk_version.png, id=274, 1371.1225pt x 259.97125pt>
 File: Lab1/Images/jdk_version.png Graphic file (type png)
 <use Lab1/Images/jdk_version.png>
 Package pdftex.def Info: Lab1/Images/jdk_version.png  used on input line 46.
 (pdftex.def)             Requested size: 455.24411pt x 86.31439pt.
-<Lab1/Images/install_openssh.png, id=197, 1371.1225pt x 770.88pt>
+<Lab1/Images/install_openssh.png, id=275, 1371.1225pt x 770.88pt>
 File: Lab1/Images/install_openssh.png Graphic file (type png)
 <use Lab1/Images/install_openssh.png>
 Package pdftex.def Info: Lab1/Images/install_openssh.png  used on input line 63.
 (pdftex.def)             Requested size: 455.24411pt x 255.94386pt.
  [2 <./Lab1/Images/jdk_version.png> <./Lab1/Images/install_openssh.png>]
-<Lab1/Images/ssh_key_authorized.png, id=205, 1371.1225pt x 577.15625pt>
+<Lab1/Images/ssh_key_authorized.png, id=283, 1371.1225pt x 577.15625pt>
 File: Lab1/Images/ssh_key_authorized.png Graphic file (type png)
 <use Lab1/Images/ssh_key_authorized.png>
 Package pdftex.def Info: Lab1/Images/ssh_key_authorized.png  used on input line 78.
 (pdftex.def)             Requested size: 455.24411pt x 191.62462pt.
-<Lab1/Images/hadoop_adduser.png, id=206, 1371.1225pt x 704.6325pt>
+<Lab1/Images/hadoop_adduser.png, id=284, 1371.1225pt x 704.6325pt>
 File: Lab1/Images/hadoop_adduser.png Graphic file (type png)
 <use Lab1/Images/hadoop_adduser.png>
 Package pdftex.def Info: Lab1/Images/hadoop_adduser.png  used on input line 98.
@@ -1199,128 +1199,128 @@ File: Lab1/Images/hadoop_adduser.png Graphic file (type png)
 <use Lab1/Images/hadoop_adduser.png>
 Package pdftex.def Info: Lab1/Images/hadoop_adduser.png  used on input line 114.
 (pdftex.def)             Requested size: 455.24411pt x 233.94868pt.
-<Lab1/Images/move_hadoop.png, id=212, 1371.1225pt x 188.705pt>
+<Lab1/Images/move_hadoop.png, id=291, 1371.1225pt x 188.705pt>
 File: Lab1/Images/move_hadoop.png Graphic file (type png)
 <use Lab1/Images/move_hadoop.png>
 Package pdftex.def Info: Lab1/Images/move_hadoop.png  used on input line 126.
 (pdftex.def)             Requested size: 455.24411pt x 62.65291pt.
  [4 <./Lab1/Images/move_hadoop.png>]
-<Lab1/Images/env1.png, id=221, 1371.1225pt x 162.6075pt>
+<Lab1/Images/env1.png, id=299, 1371.1225pt x 162.6075pt>
 File: Lab1/Images/env1.png Graphic file (type png)
 <use Lab1/Images/env1.png>
 Package pdftex.def Info: Lab1/Images/env1.png  used on input line 143.
 (pdftex.def)             Requested size: 455.24411pt x 53.98814pt.
-<Lab1/Images/bashrc.png, id=222, 1371.1225pt x 714.67pt>
+<Lab1/Images/bashrc.png, id=300, 1371.1225pt x 714.67pt>
 File: Lab1/Images/bashrc.png Graphic file (type png)
 <use Lab1/Images/bashrc.png>
 Package pdftex.def Info: Lab1/Images/bashrc.png  used on input line 144.
 (pdftex.def)             Requested size: 455.24411pt x 237.28128pt.
-<Lab1/Images/hadoop-env1.png, id=223, 1371.1225pt x 770.88pt>
+<Lab1/Images/hadoop-env1.png, id=301, 1371.1225pt x 770.88pt>
 File: Lab1/Images/hadoop-env1.png Graphic file (type png)
 <use Lab1/Images/hadoop-env1.png>
 Package pdftex.def Info: Lab1/Images/hadoop-env1.png  used on input line 168.
 (pdftex.def)             Requested size: 455.24411pt x 255.94386pt.
-<Lab1/Images/hadoop-env2.png, id=224, 1371.1225pt x 770.88pt>
+<Lab1/Images/hadoop-env2.png, id=302, 1371.1225pt x 770.88pt>
 File: Lab1/Images/hadoop-env2.png Graphic file (type png)
 <use Lab1/Images/hadoop-env2.png>
 Package pdftex.def Info: Lab1/Images/hadoop-env2.png  used on input line 169.
 (pdftex.def)             Requested size: 455.24411pt x 255.94386pt.
  [5 <./Lab1/Images/env1.png> <./Lab1/Images/bashrc.png>] [6 <./Lab1/Images/hadoop-env1.png> <./Lab1/Images/hadoop-env2.png>]
-<Lab1/Images/nano core-site1.png, id=235, 1371.1225pt x 115.43124pt>
+<Lab1/Images/nano core-site1.png, id=313, 1371.1225pt x 115.43124pt>
 File: Lab1/Images/nano core-site1.png Graphic file (type png)
 <use Lab1/Images/nano core-site1.png>
 Package pdftex.def Info: Lab1/Images/nano core-site1.png  used on input line 187.
 (pdftex.def)             Requested size: 455.24411pt x 38.32492pt.
-<Lab1/Images/nano core-site2.png, id=236, 1371.1225pt x 744.7825pt>
+<Lab1/Images/nano core-site2.png, id=314, 1371.1225pt x 744.7825pt>
 File: Lab1/Images/nano core-site2.png Graphic file (type png)
 <use Lab1/Images/nano core-site2.png>
 Package pdftex.def Info: Lab1/Images/nano core-site2.png  used on input line 188.
 (pdftex.def)             Requested size: 455.24411pt x 247.27908pt.
-<Lab1/Images/nano hdfs-site1.png, id=237, 1371.1225pt x 118.4425pt>
+<Lab1/Images/nano hdfs-site1.png, id=315, 1371.1225pt x 118.4425pt>
 File: Lab1/Images/nano hdfs-site1.png Graphic file (type png)
 <use Lab1/Images/nano hdfs-site1.png>
 Package pdftex.def Info: Lab1/Images/nano hdfs-site1.png  used on input line 215.
 (pdftex.def)             Requested size: 455.24411pt x 39.32469pt.
-<Lab1/Images/nano hdfs-site2.png, id=238, 1371.1225pt x 749.80125pt>
+<Lab1/Images/nano hdfs-site2.png, id=316, 1371.1225pt x 749.80125pt>
 File: Lab1/Images/nano hdfs-site2.png Graphic file (type png)
 <use Lab1/Images/nano hdfs-site2.png>
 Package pdftex.def Info: Lab1/Images/nano hdfs-site2.png  used on input line 216.
 (pdftex.def)             Requested size: 455.24411pt x 248.94539pt.
  [7 <./Lab1/Images/nano core-site1.png> <./Lab1/Images/nano core-site2.png>]
-<Lab1/Images/data_name_folder.png, id=244, 1371.1225pt x 161.60374pt>
+<Lab1/Images/data_name_folder.png, id=322, 1371.1225pt x 161.60374pt>
 File: Lab1/Images/data_name_folder.png Graphic file (type png)
 <use Lab1/Images/data_name_folder.png>
 Package pdftex.def Info: Lab1/Images/data_name_folder.png  used on input line 229.
 (pdftex.def)             Requested size: 455.24411pt x 53.65489pt.
-<Lab1/Images/mapred-site1.png, id=245, 1371.1225pt x 119.44624pt>
+<Lab1/Images/mapred-site1.png, id=323, 1371.1225pt x 119.44624pt>
 File: Lab1/Images/mapred-site1.png Graphic file (type png)
 <use Lab1/Images/mapred-site1.png>
 Package pdftex.def Info: Lab1/Images/mapred-site1.png  used on input line 246.
 (pdftex.def)             Requested size: 455.24411pt x 39.65796pt.
-<Lab1/Images/mapred-site2.png, id=246, 1371.1225pt x 176.66pt>
+<Lab1/Images/mapred-site2.png, id=324, 1371.1225pt x 176.66pt>
 File: Lab1/Images/mapred-site2.png Graphic file (type png)
 <use Lab1/Images/mapred-site2.png>
 Package pdftex.def Info: Lab1/Images/mapred-site2.png  used on input line 247.
 (pdftex.def)             Requested size: 455.24411pt x 58.6538pt.
  [8 <./Lab1/Images/nano hdfs-site1.png> <./Lab1/Images/nano hdfs-site2.png> <./Lab1/Images/data_name_folder.png>]
-<Lab1/Images/yarn-site1.png, id=253, 1371.1225pt x 119.44624pt>
+<Lab1/Images/yarn-site1.png, id=332, 1371.1225pt x 119.44624pt>
 File: Lab1/Images/yarn-site1.png Graphic file (type png)
 <use Lab1/Images/yarn-site1.png>
 Package pdftex.def Info: Lab1/Images/yarn-site1.png  used on input line 264.
 (pdftex.def)             Requested size: 455.24411pt x 39.65796pt.
-<Lab1/Images/yarn-site2.png, id=254, 1371.1225pt x 752.8125pt>
+<Lab1/Images/yarn-site2.png, id=333, 1371.1225pt x 752.8125pt>
 File: Lab1/Images/yarn-site2.png Graphic file (type png)
 <use Lab1/Images/yarn-site2.png>
 Package pdftex.def Info: Lab1/Images/yarn-site2.png  used on input line 265.
 (pdftex.def)             Requested size: 455.24411pt x 249.94518pt.
  [9 <./Lab1/Images/mapred-site1.png> <./Lab1/Images/mapred-site2.png> <./Lab1/Images/yarn-site1.png> <./Lab1/Images/yarn-site2.png>]
-<Lab1/Images/hdfs_namenode_format.png, id=260, 1371.1225pt x 770.88pt>
+<Lab1/Images/hdfs_namenode_format.png, id=340, 1371.1225pt x 770.88pt>
 File: Lab1/Images/hdfs_namenode_format.png Graphic file (type png)
 <use Lab1/Images/hdfs_namenode_format.png>
 Package pdftex.def Info: Lab1/Images/hdfs_namenode_format.png  used on input line 278.
 (pdftex.def)             Requested size: 455.24411pt x 255.94386pt.
-<Lab1/Images/start-dfs.png, id=261, 1371.1225pt x 171.64125pt>
+<Lab1/Images/start-dfs.png, id=341, 1371.1225pt x 171.64125pt>
 File: Lab1/Images/start-dfs.png Graphic file (type png)
 <use Lab1/Images/start-dfs.png>
 Package pdftex.def Info: Lab1/Images/start-dfs.png  used on input line 291.
 (pdftex.def)             Requested size: 455.24411pt x 56.98749pt.
-<Lab1/Images/jps.png, id=262, 1371.1225pt x 123.46124pt>
+<Lab1/Images/jps.png, id=342, 1371.1225pt x 123.46124pt>
 File: Lab1/Images/jps.png Graphic file (type png)
 <use Lab1/Images/jps.png>
 Package pdftex.def Info: Lab1/Images/jps.png  used on input line 292.
 (pdftex.def)             Requested size: 455.24411pt x 40.991pt.
-<Lab1/Images/yarn.png, id=263, 1371.1225pt x 385.44pt>
+<Lab1/Images/yarn.png, id=343, 1371.1225pt x 385.44pt>
 File: Lab1/Images/yarn.png Graphic file (type png)
 <use Lab1/Images/yarn.png>
 Package pdftex.def Info: Lab1/Images/yarn.png  used on input line 305.
 (pdftex.def)             Requested size: 455.24411pt x 127.97192pt.
-<Lab1/Images/YARN.png, id=264, 1371.1225pt x 385.44pt>
+<Lab1/Images/YARN.png, id=344, 1371.1225pt x 385.44pt>
 File: Lab1/Images/YARN.png Graphic file (type png)
 <use Lab1/Images/YARN.png>
 Package pdftex.def Info: Lab1/Images/YARN.png  used on input line 306.
 (pdftex.def)             Requested size: 455.24411pt x 127.97192pt.
-<Lab1/Images/HDFS_UI.png, id=265, 1371.1225pt x 770.88pt>
+<Lab1/Images/HDFS_UI.png, id=345, 1371.1225pt x 770.88pt>
 File: Lab1/Images/HDFS_UI.png Graphic file (type png)
 <use Lab1/Images/HDFS_UI.png>
 Package pdftex.def Info: Lab1/Images/HDFS_UI.png  used on input line 307.
 (pdftex.def)             Requested size: 455.24411pt x 255.94386pt.
  [10 <./Lab1/Images/hdfs_namenode_format.png> <./Lab1/Images/start-dfs.png> <./Lab1/Images/jps.png>] [11 <./Lab1/Images/yarn.png> <./Lab1/Images/yarn.png> <./Lab1/Images/HDFS_UI.png>]
-<Lab1/Images/hdfs_ops1.png, id=278, 1371.1225pt x 531.9875pt>
+<Lab1/Images/hdfs_ops1.png, id=357, 1371.1225pt x 531.9875pt>
 File: Lab1/Images/hdfs_ops1.png Graphic file (type png)
 <use Lab1/Images/hdfs_ops1.png>
 Package pdftex.def Info: Lab1/Images/hdfs_ops1.png  used on input line 333.
 (pdftex.def)             Requested size: 455.24411pt x 176.62791pt.
-<Lab1/Images/hdfs_ops2.png, id=279, 1371.1225pt x 483.8075pt>
+<Lab1/Images/hdfs_ops2.png, id=358, 1371.1225pt x 483.8075pt>
 File: Lab1/Images/hdfs_ops2.png Graphic file (type png)
 <use Lab1/Images/hdfs_ops2.png>
 Package pdftex.def Info: Lab1/Images/hdfs_ops2.png  used on input line 338.
 (pdftex.def)             Requested size: 455.24411pt x 160.63142pt.
-<Lab1/Images/hdfs_res1.png, id=280, 1371.1225pt x 770.88pt>
+<Lab1/Images/hdfs_res1.png, id=359, 1371.1225pt x 770.88pt>
 File: Lab1/Images/hdfs_res1.png Graphic file (type png)
 <use Lab1/Images/hdfs_res1.png>
 Package pdftex.def Info: Lab1/Images/hdfs_res1.png  used on input line 343.
 (pdftex.def)             Requested size: 455.24411pt x 255.94386pt.
-<Lab1/Images/hdfs_res2.png, id=281, 1371.1225pt x 770.88pt>
+<Lab1/Images/hdfs_res2.png, id=360, 1371.1225pt x 770.88pt>
 File: Lab1/Images/hdfs_res2.png Graphic file (type png)
 <use Lab1/Images/hdfs_res2.png>
 Package pdftex.def Info: Lab1/Images/hdfs_res2.png  used on input line 348.
@@ -1329,22 +1329,22 @@ Package pdftex.def Info: Lab1/Images/hdfs_res2.png  used on input line 348.
 \openout2 = `Lab2/Lab_2.aux'.
 
  (./Lab2/Lab_2.tex
-<Lab2/Images/start_hadoop.png, id=294, 1371.1225pt x 212.795pt>
+<Lab2/Images/start_hadoop.png, id=373, 1371.1225pt x 212.795pt>
 File: Lab2/Images/start_hadoop.png Graphic file (type png)
 <use Lab2/Images/start_hadoop.png>
 Package pdftex.def Info: Lab2/Images/start_hadoop.png  used on input line 28.
 (pdftex.def)             Requested size: 455.24411pt x 70.65115pt.
-<Lab2/Images/jps.png, id=295, 1371.1225pt x 130.4875pt>
+<Lab2/Images/jps.png, id=374, 1371.1225pt x 130.4875pt>
 File: Lab2/Images/jps.png Graphic file (type png)
 <use Lab2/Images/jps.png>
 Package pdftex.def Info: Lab2/Images/jps.png  used on input line 29.
 (pdftex.def)             Requested size: 455.24411pt x 43.32382pt.
-<Lab2/Images/copy.png, id=296, 1371.1225pt x 160.6pt>
+<Lab2/Images/copy.png, id=375, 1371.1225pt x 160.6pt>
 File: Lab2/Images/copy.png Graphic file (type png)
 <use Lab2/Images/copy.png>
 Package pdftex.def Info: Lab2/Images/copy.png  used on input line 50.
 (pdftex.def)             Requested size: 455.24411pt x 53.32162pt.
-<Lab2/Images/load.png, id=297, 1371.1225pt x 26.0975pt>
+<Lab2/Images/load.png, id=376, 1371.1225pt x 26.0975pt>
 File: Lab2/Images/load.png Graphic file (type png)
 <use Lab2/Images/load.png>
 Package pdftex.def Info: Lab2/Images/load.png  used on input line 67.
@@ -1354,52 +1354,124 @@ Package pdftex.def Info: Lab2/Images/load.png  used on input line 67.
 
 
  <./Lab2/Images/start_hadoop.png> <./Lab2/Images/jps.png> <./Lab2/Images/copy.png> <./Lab2/Images/load.png>]
-<Lab2/Images/verify.png, id=305, 1371.1225pt x 54.2025pt>
+<Lab2/Images/verify.png, id=384, 1371.1225pt x 54.2025pt>
 File: Lab2/Images/verify.png Graphic file (type png)
 <use Lab2/Images/verify.png>
 Package pdftex.def Info: Lab2/Images/verify.png  used on input line 81.
 (pdftex.def)             Requested size: 455.24411pt x 17.99605pt.
-<Lab2/Images/block.png, id=306, 1371.1225pt x 695.59875pt>
+<Lab2/Images/block.png, id=385, 1371.1225pt x 695.59875pt>
 File: Lab2/Images/block.png Graphic file (type png)
 <use Lab2/Images/block.png>
 Package pdftex.def Info: Lab2/Images/block.png  used on input line 98.
 (pdftex.def)             Requested size: 455.24411pt x 230.94934pt.
-<Lab2/Images/down.png, id=307, 1371.1225pt x 25.09375pt>
+<Lab2/Images/down.png, id=386, 1371.1225pt x 25.09375pt>
 File: Lab2/Images/down.png Graphic file (type png)
 <use Lab2/Images/down.png>
 Package pdftex.def Info: Lab2/Images/down.png  used on input line 112.
 (pdftex.def)             Requested size: 455.24411pt x 8.3315pt.
-<Lab2/Images/delete.png, id=308, 1371.1225pt x 95.35625pt>
+<Lab2/Images/delete.png, id=387, 1371.1225pt x 95.35625pt>
 File: Lab2/Images/delete.png Graphic file (type png)
 <use Lab2/Images/delete.png>
 Package pdftex.def Info: Lab2/Images/delete.png  used on input line 125.
 (pdftex.def)             Requested size: 455.24411pt x 31.65971pt.
-<Lab2/Images/final.png, id=309, 1371.1225pt x 592.2125pt>
+<Lab2/Images/final.png, id=388, 1371.1225pt x 592.2125pt>
 File: Lab2/Images/final.png Graphic file (type png)
 <use Lab2/Images/final.png>
 Package pdftex.def Info: Lab2/Images/final.png  used on input line 134.
 (pdftex.def)             Requested size: 455.24411pt x 196.62354pt.
- [16 <./Lab2/Images/verify.png> <./Lab2/Images/block.png> <./Lab2/Images/down.png> <./Lab2/Images/delete.png>]) [17 <./Lab2/Images/final.png>] (./main.aux (./title_page.aux) (./Lab1/Lab_1.aux) (./Lab2/Lab_2.aux))
+ [16 <./Lab2/Images/verify.png> <./Lab2/Images/block.png> <./Lab2/Images/down.png> <./Lab2/Images/delete.png>]) [17 <./Lab2/Images/final.png>]
+\openout2 = `Lab3/Lab_3.aux'.
+
+ (./Lab3/Lab_3.tex
+<Lab3/Images/start_services.png, id=397, 622.325pt x 328.22626pt>
+File: Lab3/Images/start_services.png Graphic file (type png)
+<use Lab3/Images/start_services.png>
+Package pdftex.def Info: Lab3/Images/start_services.png  used on input line 25.
+(pdftex.def)             Requested size: 455.24411pt x 240.104pt.
+<Lab3/Images/hdfs_input.png, id=398, 631.35875pt x 224.84pt>
+File: Lab3/Images/hdfs_input.png Graphic file (type png)
+<use Lab3/Images/hdfs_input.png>
+Package pdftex.def Info: Lab3/Images/hdfs_input.png  used on input line 46.
+(pdftex.def)             Requested size: 455.24411pt x 162.12482pt.
+ [18
+
+
+
+ <./Lab3/Images/start_services.png>]
+<Lab3/Images/mapper.png, id=405, 784.9325pt x 470.75874pt>
+File: Lab3/Images/mapper.png Graphic file (type png)
+<use Lab3/Images/mapper.png>
+Package pdftex.def Info: Lab3/Images/mapper.png  used on input line 62.
+(pdftex.def)             Requested size: 455.24411pt x 273.03308pt.
+<Lab3/Images/reducer.png, id=406, 792.9625pt x 365.365pt>
+File: Lab3/Images/reducer.png Graphic file (type png)
+<use Lab3/Images/reducer.png>
+Package pdftex.def Info: Lab3/Images/reducer.png  used on input line 72.
+(pdftex.def)             Requested size: 455.24411pt x 209.75989pt.
+ [19 <./Lab3/Images/hdfs_input.png> <./Lab3/Images/mapper.png>]
+<Lab3/Images/driver.png, id=411, 763.85374pt x 517.935pt>
+File: Lab3/Images/driver.png Graphic file (type png)
+<use Lab3/Images/driver.png>
+Package pdftex.def Info: Lab3/Images/driver.png  used on input line 83.
+(pdftex.def)             Requested size: 455.24411pt x 308.67699pt.
+ [20 <./Lab3/Images/reducer.png> <./Lab3/Images/driver.png>]
+<Lab3/Images/compile.png, id=416, 954.56625pt x 106.3975pt>
+File: Lab3/Images/compile.png Graphic file (type png)
+<use Lab3/Images/compile.png>
+Package pdftex.def Info: Lab3/Images/compile.png  used on input line 100.
+(pdftex.def)             Requested size: 455.24411pt x 50.74226pt.
+<Lab3/Images/run_job.png, id=417, 1371.1225pt x 682.55pt>
+File: Lab3/Images/run_job.png Graphic file (type png)
+<use Lab3/Images/run_job.png>
+Package pdftex.def Info: Lab3/Images/run_job.png  used on input line 116.
+(pdftex.def)             Requested size: 455.24411pt x 226.61696pt.
+<Lab3/Images/output_dir.png, id=418, 679.53876pt x 77.28876pt>
+File: Lab3/Images/output_dir.png Graphic file (type png)
+<use Lab3/Images/output_dir.png>
+Package pdftex.def Info: Lab3/Images/output_dir.png  used on input line 132.
+(pdftex.def)             Requested size: 455.24411pt x 51.77847pt.
+ [21 <./Lab3/Images/compile.png> <./Lab3/Images/run_job.png> <./Lab3/Images/output_dir.png>]
+<Lab3/Images/result.png, id=424, 520.94624pt x 93.34875pt>
+File: Lab3/Images/result.png Graphic file (type png)
+<use Lab3/Images/result.png>
+Package pdftex.def Info: Lab3/Images/result.png  used on input line 148.
+(pdftex.def)             Requested size: 455.24411pt x 81.57596pt.
+<Lab3/Images/updatetext.png, id=425, 778.91pt x 100.375pt>
+File: Lab3/Images/updatetext.png Graphic file (type png)
+<use Lab3/Images/updatetext.png>
+Package pdftex.def Info: Lab3/Images/updatetext.png  used on input line 168.
+(pdftex.def)             Requested size: 455.24411pt x 58.66475pt.
+<Lab3/Images/rerun.png, id=426, 1364.09625pt x 533.995pt>
+File: Lab3/Images/rerun.png Graphic file (type png)
+<use Lab3/Images/rerun.png>
+Package pdftex.def Info: Lab3/Images/rerun.png  used on input line 174.
+(pdftex.def)             Requested size: 455.24411pt x 178.21518pt.
+<Lab3/Images/rerun1.png, id=427, 1371.1225pt x 691.58376pt>
+File: Lab3/Images/rerun1.png Graphic file (type png)
+<use Lab3/Images/rerun1.png>
+Package pdftex.def Info: Lab3/Images/rerun1.png  used on input line 181.
+(pdftex.def)             Requested size: 455.24411pt x 229.6163pt.
+ [22 <./Lab3/Images/result.png> <./Lab3/Images/updatetext.png> <./Lab3/Images/rerun.png>]) [23 <./Lab3/Images/rerun1.png>] (./main.aux (./title_page.aux) (./Lab1/Lab_1.aux) (./Lab2/Lab_2.aux) (./Lab3/Lab_3.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 830F90DF25A91E21140B0618884B75F0;3908.
+(rerunfilecheck)             Checksum: BEECBFAF2A8DC6A32195FCAC98D21B5D;5924.
  ) 
 Here is how much of TeX's memory you used:
- 37193 strings out of 474222
- 766519 string characters out of 5748733
- 1935975 words of memory out of 5000000
- 58791 multiletter control sequences out of 15000+600000
+ 37368 strings out of 474222
+ 770694 string characters out of 5748733
+ 1938975 words of memory out of 5000000
+ 58927 multiletter control sequences out of 15000+600000
  573501 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,11n,93p,539b,1075s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,12n,93p,539b,1075s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vntt10.pfb>
-Output written on main.pdf (20 pages, 2467495 bytes).
+Output written on main.pdf (27 pages, 3102518 bytes).
 PDF statistics:
- 368 PDF objects out of 1000 (max. 8388607)
- 290 compressed objects within 3 object streams
- 93 named destinations out of 1000 (max. 500000)
- 365 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 492 PDF objects out of 1000 (max. 8388607)
+ 394 compressed objects within 4 object streams
+ 124 named destinations out of 1000 (max. 500000)
+ 505 words of extra memory for PDF output out of 10000 (max. 10000000)
 
