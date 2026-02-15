@@ -1,11 +1,11 @@
 # Fdb version 4
-["makeindex main.idx"] 1770988066.47044 "main.idx" "main.ind" "main" 1770988827.13751 0
-  "main.idx" 1770988819.65577 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex main.idx"] 1770988066.47044 "main.idx" "main.ind" "main" 1771164097.8744 0
+  "main.idx" 1771164090.37997 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "main.ilg"
   "main.ind"
   (rewritten before read)
-["pdflatex"] 1770988817.40231 "/home/yugal/Desktop/Semester 2/Labs/Big Data Analytics Lab/File/main.tex" "main.pdf" "main" 1770988827.13775 0
+["pdflatex"] 1771164087.75138 "/home/yugal/Desktop/Semester 2/Labs/Big Data Analytics Lab/File/main.tex" "main.pdf" "main" 1771164097.87465 0
   "/etc/texmf/web2c/texmf.cnf" 1757438632.2547 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/yugal/Desktop/Semester 2/Labs/Big Data Analytics Lab/File/main.tex" 1770987258.99471 3184 247f1278d740b64675c4884a8cbd70df ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -252,7 +252,7 @@
   "Lab1/Images/yarn-site1.png" 1769536960.28816 27665 503244958300a66cbfff6bfb5d84342a ""
   "Lab1/Images/yarn-site2.png" 1769536973.91714 108327 40851e8007f4a2a0f0c1f55ebefcc2c4 ""
   "Lab1/Images/yarn.png" 1769542818.49751 71029 7b6bd3f631dd44b55c5d65c08cd7b4c1 ""
-  "Lab1/Lab_1.aux" 1770988824.96012 8553 993eb9a7389bf2b36eb221385eb772d2 "pdflatex"
+  "Lab1/Lab_1.aux" 1771164095.46839 8553 993eb9a7389bf2b36eb221385eb772d2 "pdflatex"
   "Lab1/Lab_1.tex" 1770131270.85445 10590 45a6a450a38ea844bee8c9b2d9462892 ""
   "Lab2/Images/block.png" 1770129866.98679 122890 f175d4e52af8f36b2cb88565abf497aa ""
   "Lab2/Images/copy.png" 1770129282.42592 47195 3e1a36356e60f02c1ee67eace19107cd ""
@@ -263,7 +263,7 @@
   "Lab2/Images/load.png" 1770129628.85542 9307 c2d6066414e1852a8495ec5817c40cb6 ""
   "Lab2/Images/start_hadoop.png" 1770128284.16384 37292 5aa9be6323506ebea81d313bc5b0835f ""
   "Lab2/Images/verify.png" 1770129738.06742 15426 48b3fb9d92c12957acf5cc58b163a414 ""
-  "Lab2/Lab_2.aux" 1770988825.54805 5380 8dfad3395171400395c4b5501baa102c "pdflatex"
+  "Lab2/Lab_2.aux" 1771164096.11104 5380 8dfad3395171400395c4b5501baa102c "pdflatex"
   "Lab2/Lab_2.tex" 1770131560.75492 5046 073445e6d8e60139dd1323f85cf91ef1 ""
   "Lab3/Images/compile.png" 1770986112.21691 30039 94c196a8b7b92d13b107478f2bc120c5 ""
   "Lab3/Images/driver.png" 1770987673.0979 71737 c4dc251607127ba3382aa8bf0747fdec ""
@@ -277,18 +277,18 @@
   "Lab3/Images/run_job.png" 1770986445.79749 174612 91fb546fbe7ba72163539383d2b70a2b ""
   "Lab3/Images/start_services.png" 1770984847.19206 40571 d24abf622903dd04edc2a6c4f303a028 ""
   "Lab3/Images/updatetext.png" 1770986684.42761 12170 e8c68ffc801d9df13be6fc37be7de143 ""
-  "Lab3/Lab_3.aux" 1770988826.82789 6302 472d7c1675194c0948c6088aa2e2745d "pdflatex"
-  "Lab3/Lab_3.tex" 1770988816.9021 6100 c7c6bc2bbc65c62fcfe4b19d4ed2e372 ""
+  "Lab3/Lab_3.aux" 1771164097.41906 6302 472d7c1675194c0948c6088aa2e2745d "pdflatex"
+  "Lab3/Lab_3.tex" 1771164071.83773 6104 149abfd508027083a7c6743a54b7f107 ""
   "hcmut-report.cls" 1760523704 3629 461855fc3fc99e3cb38683f4e690f18b ""
   "logo_250_1 (1).png" 1760523704 179021 a76639736a11adec5223101cb399f17d ""
-  "main.aux" 1770988826.82789 339 9b9e872f5e23fea516a7b2f7e7bdb4d5 "pdflatex"
+  "main.aux" 1771164097.42006 339 9b9e872f5e23fea516a7b2f7e7bdb4d5 "pdflatex"
   "main.ind" 1770988066.8515 0 d41d8cd98f00b204e9800998ecf8427e "makeindex main.idx"
-  "main.lof" 1770988826.83689 4567 6da70327e10997bc1cc2d80ffea21e1b "pdflatex"
-  "main.out" 1770988826.83689 5924 beecbfaf2a8dc6a32195fcac98d21b5d "pdflatex"
+  "main.lof" 1771164097.43106 4567 6da70327e10997bc1cc2d80ffea21e1b "pdflatex"
+  "main.out" 1771164097.42906 5924 beecbfaf2a8dc6a32195fcac98d21b5d "pdflatex"
   "main.tex" 1770987258.99471 3184 247f1278d740b64675c4884a8cbd70df ""
-  "main.toc" 1770988826.83689 3230 c3072cc437f7460dc5cf7edf55068b7c "pdflatex"
-  "title_page.aux" 1770988820.1997 1097 a80971be6373f2db7ce8a80c66bcb5a0 "pdflatex"
-  "title_page.tex" 1769521695.92128 1157 a2a86e8a03f6e11e44cb9fd2ae934dbc ""
+  "main.toc" 1771164097.43093 3230 c3072cc437f7460dc5cf7edf55068b7c "pdflatex"
+  "title_page.aux" 1771164090.83597 1097 a80971be6373f2db7ce8a80c66bcb5a0 "pdflatex"
+  "title_page.tex" 1771164087.18893 1158 7ab35bad97f3a61c4015c6ada789e30f ""
   (generated)
   "Lab1/Lab_1.aux"
   "Lab2/Lab_2.aux"
