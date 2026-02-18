@@ -31,3 +31,16 @@
 \contentsline {subsection}{\numberline {3.8}Step 8: Modify Input and Re-run Job}{22}{subsection.3.8}%
 \contentsline {subsection}{\numberline {3.9}Result}{23}{subsection.3.9}%
 \contentsline {subsection}{\numberline {3.10}Conclusion}{23}{subsection.3.10}%
+\noindent \textbf {Assignment 4: Implement Data Processing using Spark and Compare with MapReduce.}\hfill \textbf {(17-02-2026)}\hfill \textbf {24}\par 
+\contentsline {subsection}{\numberline {4.1}Step 1: Start Hadoop Services}{24}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Step 2: Verify Input File in HDFS}{24}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Step 3: Start Spark Shell}{25}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Step 4: Load Data from HDFS into Spark}{25}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Step 5: Implement Spark Transformations}{26}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Step 6: Apply Actions and Display Output}{26}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.7}Step 7: Save Output to HDFS}{27}{subsection.4.7}%
+\contentsline {subsection}{\numberline {4.8}Step 8: Check Output Directory and Validate Result}{27}{subsection.4.8}%
+\contentsline {subsection}{\numberline {4.9}Step 9: Stop Spark and Hadoop Services}{27}{subsection.4.9}%
+\contentsline {subsection}{\numberline {4.10}Step 10: Comparison with MapReduce}{28}{subsection.4.10}%
+\contentsline {subsection}{\numberline {4.11}Result}{28}{subsection.4.11}%
+\contentsline {subsection}{\numberline {4.12}Conclusion}{28}{subsection.4.12}%

@@ -41,3 +41,12 @@
 \contentsline {figure}{\numberline {40}{\ignorespaces Updating input text file}}{22}{figure.caption.62}%
 \contentsline {figure}{\numberline {41}{\ignorespaces Re-running MapReduce with modified dataset}}{22}{figure.caption.63}%
 \contentsline {figure}{\numberline {42}{\ignorespaces New output after re-running MapReduce job}}{23}{figure.caption.64}%
+\contentsline {figure}{\numberline {43}{\ignorespaces Starting Hadoop services and verifying using jps}}{24}{figure.caption.66}%
+\contentsline {figure}{\numberline {44}{\ignorespaces Verifying input dataset in HDFS}}{25}{figure.caption.67}%
+\contentsline {figure}{\numberline {45}{\ignorespaces Launching Spark Shell}}{25}{figure.caption.68}%
+\contentsline {figure}{\numberline {46}{\ignorespaces Reading input data from HDFS}}{26}{figure.caption.69}%
+\contentsline {figure}{\numberline {47}{\ignorespaces Spark transformations for Word Count}}{26}{figure.caption.70}%
+\contentsline {figure}{\numberline {48}{\ignorespaces Displaying results using collect()}}{26}{figure.caption.71}%
+\contentsline {figure}{\numberline {49}{\ignorespaces Saving Spark output to HDFS}}{27}{figure.caption.72}%
+\contentsline {figure}{\numberline {50}{\ignorespaces Validating Spark output in HDFS}}{27}{figure.caption.73}%
+\contentsline {figure}{\numberline {51}{\ignorespaces Stopping Spark session and Hadoop services}}{28}{figure.caption.74}%
